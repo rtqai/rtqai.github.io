@@ -17,9 +17,9 @@
         "display1Size": 4.5,
         "display2Font": "Roboto",
         "display2Size": 2.2,
-        "display5Font": "Raleway",
-        "display5Size": 1.8,
-        "display7Font": "Roboto Slab",
+        "display5Font": "Roboto Slab",
+        "display5Size": "1.8",
+        "display7Font": "Roboto",
         "display7Size": 1.1,
         "display4Font": "Roboto",
         "display4Size": 0.9,
@@ -54,7 +54,7 @@
       }
     ],
     "versionFirst": "4.7.7",
-    "uniqCompNum": 12,
+    "uniqCompNum": 13,
     "versionPublish": "4.7.7",
     "screenshot": "screenshot.png",
     "favicon": "",
@@ -174,6 +174,55 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@flexDirection)": {
+              ".mbr-row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".btn-container": {
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center"
+            },
+            "@media (min-width: 768px)": {
+              ".mbr-section-subtitle": {
+                "margin-bottom": "0"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff",
+              "text-align": "right"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "right"
+            },
+            ".mbr-section-subtitle DIV": {
+              "text-align": "right"
+            },
+            ".mbr-section-title DIV": {
+              "text-align": "right"
+            }
+          },
+          "_name": "info2",
+          "_customHTML": "<section class=\"info2\" group=\"Testimonials & Info\" plugins=\"amp-main\">\n\n    <mbr-parameters>\n    <!--Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"4\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Button\" name=\"showButton\" checked>\n        <input type=\"checkbox\" title=\"Text on Left/Right\" name=\"flexDirection\" condition=\"(showTitle || showSubtitle) && showButton\" checked>\n\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/04.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#767676\" selected>\n        </fieldset>\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-justify-content-center\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-8\" mbr-if=\"showTitle || showSubtitle\">\n                <h2 class=\"mbr-section-title align-right mbr-fonts-style mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                    一般社団法人\n                <div>量子人工知能利用技術研究開発起点</div></h2>\n                <h3 class=\"mbr-section-subtitle align-right mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                    住所：郵便番号113-0032　東京都文京区弥生2-11-6\n                <div>問い合わせ先：adm＠qai.or.jp</div></h3>\n            </div>\n            <div class=\"btn-container mbr-col-sm-12 mbr-col-md-6 mbr-col-lg-4\" mbr-if=\"showButton\">\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-black-outline\" href=\"mailto:adm@qai.or.jp\" data-app-placeholder=\"Type Text\"><span class=\"fa fa-envelope-o mbr-iconfont mbr-iconfont-btn\"></span>お問い合わせ</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qXtmeIyRQN",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "info2-c"
         }
       ]
     }
