@@ -119,11 +119,11 @@
           "_name": "content4",
           "_customHTML": "<section class=\"content4 mbr-section article\" plugins=\"amp-main\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#eaeaea\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"mbr-text align-center mbr-fonts-style mbr-light\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" mbr-text>\n            この法人は、量子人工知能技術の研究開発起点として量子論的、および古典論的人工知能の科学技<span style=\"text-align: right;\">術の啓蒙普及、関連する基礎研究さらにはその応用範囲の拡大、および利用技術の開発を行う事を</span><span style=\"text-align: right;\">目的とし、その目的を達成するために次の事業を行う。</span></div>\n    </div>\n</section>",
           "_cid": "qXnFBwISN2",
+          "_anchor": "content4-a",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {},
-          "_anchor": "content4-a"
+          "_params": {}
         },
         {
           "_styles": {
